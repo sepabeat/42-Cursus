@@ -6,13 +6,13 @@
 /*   By: salperez <salperez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/19 16:59:37 by salperez          #+#    #+#             */
-/*   Updated: 2023/04/20 13:12:37 by salperez         ###   ########.fr       */
+/*   Updated: 2023/04/20 13:22:56 by salperez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <string.h>
-
+//arreglar 25 lineas
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
 	unsigned char	*str;
