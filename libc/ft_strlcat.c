@@ -6,29 +6,59 @@
 /*   By: salperez <salperez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/20 15:40:27 by salperez          #+#    #+#             */
-/*   Updated: 2023/04/20 15:57:30 by salperez         ###   ########.fr       */
+/*   Updated: 2023/04/20 18:07:49 by salperez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <string.h>
 
-// size_t	ft_strlcat(char	*dst, const char	*src, size_t	dstsize)
-// {
+size_t	ft_strlen(const char *s)
+{
+	size_t	i;
 
-	
-// }
+	i = 0;
+	while (s[i] != '\0')
+		i++;
+	return (i);
+}
+
+size_t	ft_strlcat(char	*dst, const char	*src, size_t	dstsize)
+{
+	size_t	i;
+	size_t	j;
+
+	i = 0;
+	j = 0;
+	while (dst[i] != '\0' && i < dstsize)
+	{
+		i++;
+	}	
+	while (src[j] != '\0')
+	{
+		while (j < dstsize)
+		{
+			dst[i] = src[j];
+			i++;
+			j++;
+		}
+		j++;
+	}
+	if (dst[i] != '\0')
+		dst[i] = '\0';
+	return (ft_strlen(dst));
+}
 
 int main (void)
 {
 	char	dst[] = "hola";
 	char	src[] = "cabesa";
-	size_t	dstsize = 4;
+	size_t	dstsize = 6;
 
 	printf("%s\n", dst);
 	printf("%s\n", src);
-	// printf("%d\n", ft_strlcat(dst, src, dstsize));
-	printf("%lu\n", strlcat(dst, src, 4));
+	printf("%zu\n", ft_strlcat(dst, src, dstsize));
+	printf("%zu\n", strlcat(dst, src, 4));
 	printf("%s\n", dst);
 	printf("%s\n", src);
 	return (0);
