@@ -40,12 +40,12 @@ char	*ft_strrchr(const char *s, int c)
 	return (0);
 }
 
-// int	main (void)
-// {
-// 	const char s[] = "hola k ase";
-// 	int c = 'a';
+int	main (void)
+{
+	const char s[] = "hola k ase";
+	int c = 'a';
 
-// 	// printf("%s", strrchr(s, c));
-// 	printf("%s", ft_strrchr(s, c));
-// 	return (0);
-// }
+	// printf("%s", strrchr(s, c));
+	printf("%s", ft_strrchr(s, c));
+	return (0);
+}

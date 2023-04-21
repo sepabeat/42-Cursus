@@ -12,7 +12,7 @@
 
 #include <stdio.h>
 #include <string.h>
-//arreglar 25 lineas
+//arreglar 25 lineas, y me devuelve siempre null, cosa que no entiendo
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
 	unsigned char	*str;
@@ -49,9 +49,10 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 
 int	main(void)
 {
-	char *str = "hola pep hola pepsicola";
-	char *tofind = "pepsi";
-	size_t len = 21;
+	char *str = "ok ka ke ase";
+	char *tofind = "ke";
+	size_t len = 10;
 
-	printf("%s", strnstr(str, tofind, len));
+	printf("%s", ft_strnstr(str, tofind, len));
+	return (0);
 }
