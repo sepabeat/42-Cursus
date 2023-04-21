@@ -31,19 +31,19 @@ void	*ft_memcpy(void	*dst, const void	*src, size_t	n)
 	return (dst);
 }
 
-char    *ft_strdup(const char  *s1)
+char    *ft_strdup(const char  *src)
 {
     size_t  len;
     char    *dest;
 
-    len = ft_strlen(s1);
-    dest = malloc(len + 1);
+    len = ft_strlen(src);
+    dest = (char *)malloc(sizeof(char) * (len + 1));
     if (dest == NULL)
         return (NULL);
-    ft_memcpy(dest, s1, len);
+    ft_memcpy(dest, src, len);
     dest[len] = '\0';
-    free (dest);
     return (dest);
+    free (dest);
 }
 
 int main(void)
