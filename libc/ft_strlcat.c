@@ -58,7 +58,7 @@ int main (void)
 	printf("%s\n", dst);
 	printf("%s\n", src);
 	printf("%zu\n", ft_strlcat(dst, src, dstsize));
-	printf("%zu\n", strlcat(dst, src, 4));
+	printf("%zu\n", strlcat(dst, src, dstsize));
 	printf("%s\n", dst);
 	printf("%s\n", src);
 	return (0);

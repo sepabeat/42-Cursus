@@ -24,12 +24,12 @@ char	*ft_strchr(const char *s, int c)
 	return (0);
 }
 
-// int	main (void)
-// {
-// 	const char s[] = "hola k ase";
-// 	int c = 107;
+int	main (void)
+{
+	const char s[] = "hola k ase";
+	int c = 'k';
 
-// 	// printf("%s", strchr(s, c));
-// 	printf("%s", ft_strchr(s, c));
-// 	return (0);
-// }
+	// printf("%s", strchr(s, c));
+	printf("%s", ft_strchr(s, c));
+	return (0);
+}
