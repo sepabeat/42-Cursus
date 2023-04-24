@@ -6,21 +6,21 @@
 /*   By: salperez <salperez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/24 13:30:17 by salperez          #+#    #+#             */
-/*   Updated: 2023/04/24 13:31:52 by salperez         ###   ########.fr       */
+/*   Updated: 2023/04/24 14:09:05 by salperez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <stdio.h>
 #include <string.h>
-#include "libft.h"
 
-	char *	ft_strnstr(const char *haystack, const char *needle, size_t len)
+char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
 	unsigned char	*str;
 	unsigned char	*tofind;
-	int				x;
-	int				i;
-	int				j;
+	size_t			x;
+	size_t			i;
+	size_t			j;
 
 	str = (unsigned char *)haystack;
 	tofind = (unsigned char *)needle;
@@ -48,11 +48,11 @@
 	return (0);
 }
 
-int	main(void)
-{
-	char *str = "hola pep hola pepsicola";
-	char *tofind = "pepsi";
-	size_t len = 21;
+// int	main(void)
+// {
+// 	char *str = "hola pep hola pepsicola";
+// 	char *tofind = "pepsi";
+// 	size_t len = 21;
 
-	printf("%s", strnstr(str, tofind, len));
-}
+// 	printf("%s", strnstr(str, tofind, len));
+// }

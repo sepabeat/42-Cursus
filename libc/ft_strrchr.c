@@ -6,7 +6,7 @@
 /*   By: salperez <salperez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/18 12:08:55 by salperez          #+#    #+#             */
-/*   Updated: 2023/04/24 13:29:09 by salperez         ###   ########.fr       */
+/*   Updated: 2023/04/24 14:09:10 by salperez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <string.h>
 #include "libft.h"
 
-static size_t	ft_strlen(const char *s)
+size_t	ft_strlen(const char *s)
 {
 	size_t	i;
 
@@ -41,12 +41,12 @@ char	*ft_strrchr(const char *s, int c)
 	return (0);
 }
 
-int	main (void)
-{
-	const char s[] = "hola k ase";
-	int c = 'a';
+// int	main (void)
+// {
+// 	const char s[] = "hola k ase";
+// 	int c = 'a';
 
-	// printf("%s", strrchr(s, c));
-	printf("%s", ft_strrchr(s, c));
-	return (0);
-}
+// 	// printf("%s", strrchr(s, c));
+// 	printf("%s", ft_strrchr(s, c));
+// 	return (0);
+// }

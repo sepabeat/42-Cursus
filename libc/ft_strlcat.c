@@ -6,23 +6,13 @@
 /*   By: salperez <salperez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/20 15:40:27 by salperez          #+#    #+#             */
-/*   Updated: 2023/04/24 13:34:37 by salperez         ###   ########.fr       */
+/*   Updated: 2023/04/24 15:30:17 by salperez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdio.h>
 #include <string.h>
-
-static size_t	ft_strlen(const char *s)
-{
-	size_t	i;
-
-	i = 0;
-	while (s[i] != '\0')
-		i++;
-	return (i);
-}
 
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {

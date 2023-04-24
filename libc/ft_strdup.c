@@ -6,7 +6,7 @@
 /*   By: salperez <salperez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/24 12:40:29 by salperez          #+#    #+#             */
-/*   Updated: 2023/04/24 13:35:04 by salperez         ###   ########.fr       */
+/*   Updated: 2023/04/24 14:06:14 by salperez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-static size_t	ft_strlen(const char *s)
+size_t	ft_strlen(const char *s)
 {
 	size_t	i;
 
@@ -25,7 +25,7 @@ static size_t	ft_strlen(const char *s)
 	return (i);
 }
 
-static void	*ft_memcpy(void *dst, const void *src, size_t n)
+void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
 	size_t			i;
 	unsigned char	*dstu;
@@ -57,10 +57,10 @@ char	*ft_strdup(const char *src)
 	free(dest);
 }
 
-int	main(void)
-{
-	char src[] = "hola";
-	// printf("%s", strdup(src));
-	printf("%s", ft_strdup(src));
-	return (0);
-}
+// int	main(void)
+// {
+// 	char src[] = "hola";
+// 	// printf("%s", strdup(src));
+// 	printf("%s", ft_strdup(src));
+// 	return (0);
+// }
