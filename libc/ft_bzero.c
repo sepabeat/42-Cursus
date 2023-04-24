@@ -6,10 +6,11 @@
 /*   By: salperez <salperez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/18 16:58:13 by salperez          #+#    #+#             */
-/*   Updated: 2023/04/19 11:59:32 by salperez         ###   ########.fr       */
+/*   Updated: 2023/04/24 13:36:39 by salperez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <stdio.h>
 #include <strings.h>
 

@@ -6,11 +6,12 @@
 /*   By: salperez <salperez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/18 14:29:57 by salperez          #+#    #+#             */
-/*   Updated: 2023/04/19 12:54:08 by salperez         ###   ########.fr       */
+/*   Updated: 2023/04/24 13:23:18 by salperez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
+#include "libft.h"
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {

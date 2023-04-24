@@ -6,12 +6,13 @@
 /*   By: salperez <salperez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/19 13:48:57 by salperez          #+#    #+#             */
-/*   Updated: 2023/04/19 16:35:16 by salperez         ###   ########.fr       */
+/*   Updated: 2023/04/24 13:22:53 by salperez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <string.h>
+#include "libft.h"
 
 void	*ft_memmove(void	*dst, const void	*src, size_t	len)
 {

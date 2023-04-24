@@ -6,14 +6,15 @@
 /*   By: salperez <salperez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/20 15:40:27 by salperez          #+#    #+#             */
-/*   Updated: 2023/04/20 18:07:49 by salperez         ###   ########.fr       */
+/*   Updated: 2023/04/24 13:34:37 by salperez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <stdio.h>
 #include <string.h>
 
-size_t	ft_strlen(const char *s)
+static size_t	ft_strlen(const char *s)
 {
 	size_t	i;
 
@@ -23,7 +24,7 @@ size_t	ft_strlen(const char *s)
 	return (i);
 }
 
-size_t	ft_strlcat(char	*dst, const char	*src, size_t	dstsize)
+size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
 	size_t	i;
 	size_t	j;
@@ -33,7 +34,7 @@ size_t	ft_strlcat(char	*dst, const char	*src, size_t	dstsize)
 	while (dst[i] != '\0' && i < dstsize)
 	{
 		i++;
-	}	
+	}
 	while (src[j] != '\0')
 	{
 		while (j < dstsize)
@@ -49,11 +50,11 @@ size_t	ft_strlcat(char	*dst, const char	*src, size_t	dstsize)
 	return (ft_strlen(dst));
 }
 
-int main (void)
+int	main(void)
 {
-	char	dst[] = "hola";
-	char	src[] = "cabesa";
-	size_t	dstsize = 6;
+	char dst[] = "hola";
+	char src[] = "cabesa";
+	size_t dstsize = 6;
 
 	printf("%s\n", dst);
 	printf("%s\n", src);

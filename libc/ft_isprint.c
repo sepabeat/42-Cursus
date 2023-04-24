@@ -6,11 +6,12 @@
 /*   By: salperez <salperez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 15:02:27 by salperez          #+#    #+#             */
-/*   Updated: 2023/04/17 15:06:41 by salperez         ###   ########.fr       */
+/*   Updated: 2023/04/24 13:22:26 by salperez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
+#include "libft.h"
 
 int	ft_isprint(int c)
 {

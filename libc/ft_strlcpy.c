@@ -6,21 +6,22 @@
 /*   By: salperez <salperez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/20 13:36:13 by salperez          #+#    #+#             */
-/*   Updated: 2023/04/20 16:06:23 by salperez         ###   ########.fr       */
+/*   Updated: 2023/04/24 13:33:53 by salperez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <stdio.h>
 #include <string.h>
 
-size_t	ft_strlcpy(char	*dst, const char	*src, size_t	dstsize)
+size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
 	size_t	i;
 
 	i = 0;
-	while (src[i] != '\0' && i < dstsize -1)
+	while (src[i] != '\0' && i < dstsize - 1)
 	{
-		dst[i] = src [i];
+		dst[i] = src[i];
 		i++;
 	}
 	dst[i] = '\0';
@@ -29,17 +30,18 @@ size_t	ft_strlcpy(char	*dst, const char	*src, size_t	dstsize)
 	return (i);
 }
 
-int main (void)
+int	main(void)
 {
-	char	dst[] = "chupachups";
-	char	src[] = "upas";
-	size_t	dstsize = 4;
-	
+	char dst[] = "chupachups";
+	char src[] = "upas";
+	size_t dstsize = 4;
+
 	printf("%s\n", dst);
 	printf("%s\n", src);
 	printf("%zu\n", ft_strlcpy(dst, src, dstsize));
 	printf("%lu\n", strlcpy(dst, src, dstsize));
 	printf("%s\n", dst);
 	printf("%s\n", src);
-	return (0);;
+	return (0);
+	;
 }
