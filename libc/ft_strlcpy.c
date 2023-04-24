@@ -6,7 +6,7 @@
 /*   By: salperez <salperez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/20 13:36:13 by salperez          #+#    #+#             */
-/*   Updated: 2023/04/24 14:15:41 by salperez         ###   ########.fr       */
+/*   Updated: 2023/04/24 17:04:08 by salperez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,12 +19,15 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	size_t	i;
 
 	i = 0;
-	while (src[i] != '\0' && i < dstsize - 1)
+	if (dstsize != 0)
 	{
-		dst[i] = src[i];
-		i++;
+		while (src[i] != '\0' && i < dstsize - 1)
+		{
+			dst[i] = src[i];
+			i++;
+		}
+		dst[i] = '\0';
 	}
-	dst[i] = '\0';
 	while (src[i] != '\0')
 		i++;
 	return (i);
@@ -32,14 +35,13 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 
 // int	main(void)
 // {
-// 	char dst[] = "chupachups";
-// 	char src[] = "upas";
-// 	size_t dstsize = 4;
+// 	char dst[] = "a";
+// 	char src[] = "lorem ipsum dolor sit amet";
+// 	size_t dstsize = 15;
 
 // 	printf("%s\n", dst);
 // 	printf("%s\n", src);
 // 	printf("%zu\n", ft_strlcpy(dst, src, dstsize));
-// 	printf("%lu\n", strlcpy(dst, src, dstsize));
 // 	printf("%s\n", dst);
 // 	printf("%s\n", src);
 // 	return (0);
