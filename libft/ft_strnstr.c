@@ -6,7 +6,7 @@
 /*   By: salperez <salperez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/24 13:30:17 by salperez          #+#    #+#             */
-/*   Updated: 2023/04/25 15:27:52 by salperez         ###   ########.fr       */
+/*   Updated: 2023/04/25 16:05:01 by salperez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,6 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	i = 0;
 	if (needle[i] == '\0')
 		return ((char *)&haystack[i]);
-	// otra forma de ponerlo sería
-	//if (!*nd)
-		//return ((char *)hs);
 	while (haystack[i] != '\0' && i < len)
 	{
 		j = 0;

@@ -6,7 +6,7 @@
 /*   By: salperez <salperez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 15:45:39 by salperez          #+#    #+#             */
-/*   Updated: 2023/04/25 11:02:41 by salperez         ###   ########.fr       */
+/*   Updated: 2023/04/25 16:04:40 by salperez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,4 +38,5 @@ char	*ft_strchr(const char *s, int c)
 // 	return (0);
 // }
 
-/* funcion que continúa un string a partir de la primera coincidencia introducida en int*/
+/* funcion que continúa un string a partir
+ de la primera coincidencia introducida en int*/

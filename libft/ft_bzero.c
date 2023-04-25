@@ -6,7 +6,7 @@
 /*   By: salperez <salperez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/18 16:58:13 by salperez          #+#    #+#             */
-/*   Updated: 2023/04/24 14:08:24 by salperez         ###   ########.fr       */
+/*   Updated: 2023/04/25 16:04:18 by salperez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,6 @@ void	ft_bzero(void *s, size_t n)
 		i++;
 		f++;
 	}
-	//  return (s);
 }
 
 // int	main(void)
