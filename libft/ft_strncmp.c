@@ -6,7 +6,7 @@
 /*   By: salperez <salperez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/18 14:29:57 by salperez          #+#    #+#             */
-/*   Updated: 2023/04/24 14:00:40 by salperez         ###   ########.fr       */
+/*   Updated: 2023/04/25 14:31:47 by salperez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	while ((s1[i] != '\0' || s2[i] != '\0') && i < n)
 	{
 		if (s1[i] != s2[i])
-			return (s1[i] - s2[i]);
+			return ((unsigned char)s1[i] - (unsigned char)s2[i]);
 		i++;
 	}
 	return (0);
@@ -29,9 +29,9 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 
 // int	main(void)
 // {
-// 	int	n = 12;
-// 	char str1[] = "ab";
-// 	char str2[] = "bc";
+// 	int	n = 5;
+// 	char str1[] = "cococulo";
+// 	char str2[] = "cococola";
 // 	printf("%d", ft_strncmp(str1, str2, n));
 // 	return (0);
 // }

@@ -6,7 +6,7 @@
 /*   By: salperez <salperez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 15:45:39 by salperez          #+#    #+#             */
-/*   Updated: 2023/04/24 14:08:45 by salperez         ###   ########.fr       */
+/*   Updated: 2023/04/25 11:02:41 by salperez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,21 +16,26 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	while (s)
+	int	i;
+
+	i = 0;
+	while (s[i] != (char)c)
 	{
-		if (*s == c)
-			return ((char *)s);
-		s++;
+		if (s[i] == '\0')
+			return (NULL);
+		i++;
 	}
-	return (0);
+	return ((char *)&s[i]);
 }
 
 // int	main(void)
 // {
-// 	const char s[] = "hola k ase";
-// 	int c = 'k';
+// 	const char s[] = "hola '\0' ase";
+// 	int c = '\0';
 
 // 	// printf("%s", strchr(s, c));
 // 	printf("%s", ft_strchr(s, c));
 // 	return (0);
 // }
+
+/* funcion que continúa un string a partir de la primera coincidencia introducida en int*/

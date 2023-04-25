@@ -6,28 +6,30 @@
 /*   By: salperez <salperez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/18 16:56:17 by salperez          #+#    #+#             */
-/*   Updated: 2023/04/24 13:22:33 by salperez         ###   ########.fr       */
+/*   Updated: 2023/04/25 15:05:33 by salperez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <stdio.h>
 #include <string.h>
-#include "libft.h"
 
-int	ft_memcmp(const void	*s1, const void	*s2, size_t	n)
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	unsigned char	*str1;
 	unsigned char	*str2;
 	size_t			i;
 
-	i = 0;
 	str1 = (unsigned char *)s1;
 	str2 = (unsigned char *)s2;
-	while ((str1[i] != '\0' || str2[i] != '\0') || i < n)
+	i = 0;
+	while (i < n && (*str1 + 1 != '\0' || *str2 + 1 != '\0'))
 	{
-		if (str1[i] != str2[i])
-			return (str1[i] - str2[i]);
+		if (*str1 != *str2)
+			return (*str1 - *str2);
 		i++;
+		str1++;
+		str2++;
 	}
 	return (0);
 }

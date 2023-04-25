@@ -6,7 +6,7 @@
 /*   By: salperez <salperez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/24 12:40:58 by salperez          #+#    #+#             */
-/*   Updated: 2023/04/24 13:22:05 by salperez         ###   ########.fr       */
+/*   Updated: 2023/04/25 14:58:05 by salperez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ int	ft_atoi(const char *str)
 
 // int main (void)
 // {
-//     const char  str[] = " -68";
+//     const char  str[] = " 68";
 //     printf("%d \n", atoi(str));
 //     printf("%d", ft_atoi(str));
 //     return (0);

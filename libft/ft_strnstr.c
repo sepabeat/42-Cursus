@@ -6,7 +6,7 @@
 /*   By: salperez <salperez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/24 13:30:17 by salperez          #+#    #+#             */
-/*   Updated: 2023/04/24 14:09:05 by salperez         ###   ########.fr       */
+/*   Updated: 2023/04/25 15:27:52 by salperez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,43 +16,32 @@
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
-	unsigned char	*str;
-	unsigned char	*tofind;
-	size_t			x;
-	size_t			i;
-	size_t			j;
+	size_t	i;
+	size_t	j;
 
-	str = (unsigned char *)haystack;
-	tofind = (unsigned char *)needle;
-	x = 0;
 	i = 0;
-	if (tofind[i] == '\0')
+	if (needle[i] == '\0')
 		return ((char *)&haystack[i]);
-	while (x < len)
+	// otra forma de ponerlo sería
+	//if (!*nd)
+		//return ((char *)hs);
+	while (haystack[i] != '\0' && i < len)
 	{
-		while (str[i] != '\0')
-		{
-			j = 0;
-			while (str[i] == tofind[j] && tofind[j] != '\0')
-			{
-				if (tofind[j] == '\0')
-				{
-					return ((char *)&haystack[i]);
-				}
-				j++;
-			}
-			i++;
-		}
-		x++;
+		j = 0;
+		while (i + j < len && haystack[i + j] == needle[j] && needle[j] != '\0')
+			j++;
+		if (needle[j] == '\0')
+			return ((char *)&haystack[i]);
+		i++;
 	}
-	return (0);
+	return (NULL);
 }
 
 // int	main(void)
 // {
 // 	char *str = "hola pep hola pepsicola";
-// 	char *tofind = "pepsi";
+// 	char *needle = "pepsi";
 // 	size_t len = 21;
 
-// 	printf("%s", strnstr(str, tofind, len));
+// 	printf("%s", strnstr(str, needle, len));
 // }
