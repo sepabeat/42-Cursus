@@ -1,44 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: salperez <salperez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/19 13:19:11 by salperez          #+#    #+#             */
-/*   Updated: 2023/04/25 17:09:22 by salperez         ###   ########.fr       */
+/*   Created: 2023/04/25 16:15:24 by salperez          #+#    #+#             */
+/*   Updated: 2023/04/25 17:04:10 by salperez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdio.h>
-#include <string.h>
 
-void	*ft_memcpy(void *dst, const void *src, size_t n)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	size_t			i;
-	unsigned char	*dstu;
-	unsigned char	*srcu;
+	char			*sub;
+	unsigned int	i;
 
-	dstu = (unsigned char *)dst;
-	srcu = (unsigned char *)src;
-	i = 0;
-	if (dst == NULL && src == NULL)
+	if (start > ft_strlen(s))
+		return (ft_calloc(1, 1));
+	if (len > ft_strlen(s))
+		len = ft_strlen(s) - start;
+	sub = (char *)ft_calloc(sizeof(*s), (len + 1));
+	if (!sub)
 		return (NULL);
-	while (i < n)
+	i = 0;
+	while (i < len)
 	{
-		dstu[i] = srcu[i];
+		sub[i] = s[start + i];
 		i++;
 	}
-	return (dst);
+	return (sub);
 }
 
-// int main(void)
+// int	main(void)
 // {
-// 	char dst[] = "como";
-// 	char src[] = "estas";
-// 	size_t	n = 2;
-// 	// printf("%s", memcpy(dst, src, n));
-// 	printf("%s", ft_memcpy(dst, src, n));
 // 	return (0);
 // }
