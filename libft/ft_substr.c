@@ -6,7 +6,7 @@
 /*   By: salperez <salperez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/25 16:15:24 by salperez          #+#    #+#             */
-/*   Updated: 2023/04/25 17:51:25 by salperez         ###   ########.fr       */
+/*   Updated: 2023/04/26 11:57:35 by salperez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,6 +68,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		i++;
 	}
 	return (sub);
+	free(sub);
 }
 
 // int	main(void)
