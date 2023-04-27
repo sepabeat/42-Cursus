@@ -1,6 +1,6 @@
 //header
 
-#include "libft.h"
+// #include "libft.h"
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -54,7 +54,7 @@ char    *ft_save_word(const char    *s, unsigned int    n)
     return (str);
 }
 
-char    **ft_split(char const   *s, char    c)
+char    **ft_split(char   *s, char    c)
 {
     char    **str;
     int         x;
@@ -87,6 +87,7 @@ int main (void)
 {
     char s1[] = "    hola  d  k ase  ";
     char del = ' ';
-    printf("%d", ft_countw(s1, del));
+    // printf("%d", ft_countw(s1, del));
+    printf("%s", ft_split(s1, del));
     return (0);
 }
