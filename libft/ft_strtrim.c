@@ -13,16 +13,6 @@
 #include "libft.h"
 #include <stdio.h>
 
-// size_t	ft_strlen(const char *s)
-// {
-// 	size_t	i;
-
-// 	i = 0;
-// 	while (s[i] != '\0')
-// 		i++;
-// 	return (i);
-// }
-
 int	ft_check_set(char c, char const *set)
 {
 	while (*set)
@@ -49,19 +39,13 @@ char	*ft_strtrim(char const *s1, char const *set)
 	end = ft_strlen(s1);
 	while (end > start && ft_check_set(s1[end - 1], set))
 		end--;
-	str = (char *)malloc(sizeof(*s1) * (end - start + 1));
-	if (!str)
-		return (NULL);
-	i = 0;
-	while (start < end)
-		str[i++] = s1[start++];
-	str[i] = '\0';
+	str = ft_substr(s1, start, (end - start));
 	return (str);
 }
 
-// int main (void)
-// {
-// 	char s1[] = "lahola malargala";
-// 	char set[] = "la";
-// 	printf("%s", ft_strtrim(s1, set));
-// }
+int main (void)
+{
+	char s1[] = "hola";
+	char set[] = "la";
+	printf("%s", ft_strtrim(s1, set));
+}

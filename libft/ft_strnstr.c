@@ -42,3 +42,5 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 
 // 	printf("%s", strnstr(str, needle, len));
 // }
+
+// funcion que continúa un string a partir de la primera coincidencia introducida en int

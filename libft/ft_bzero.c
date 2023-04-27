@@ -37,3 +37,5 @@ void	ft_bzero(void *s, size_t n)
 // 	// printf("%s", ft_bzero(s, n));
 // 	return (0);
 // }
+
+// sustituir las posiciones escogidas de un string por el valor NULL

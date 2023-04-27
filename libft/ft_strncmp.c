@@ -35,3 +35,5 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 // 	printf("%d", ft_strncmp(str1, str2, n));
 // 	return (0);
 // }
+
+// Función que resta el valor de la primera diferencia encontrada hasta n y devuelve la resta en valor ASCII

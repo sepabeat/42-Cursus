@@ -33,3 +33,9 @@ void	*ft_calloc(size_t count, size_t size)
 // 	// printf("%d", ft_calloc(unidades, size));
 // 	return (0);
 // }
+
+/**Esta función aloja de forma contigua espacio para n objetos, cada uno de size 
+bytes de memoria y devuelve un puntero a la memoria alojada, esta memoria se
+llena con bytes de valor 0
+Una forma más segura (pero más lenta) que malloc para reservar memoria para 
+ya que se asegura de dejar esa memoria "vacía", con valor 0*/

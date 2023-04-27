@@ -46,3 +46,5 @@ int	ft_atoi(const char *str)
 //     printf("%d", ft_atoi(str));
 //     return (0);
 // }
+
+// te devuelve números enteros de un string eliminando espacios al principio y con su signo correspondiente. Y le das un string y te devuelve un int

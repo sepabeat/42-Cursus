@@ -47,3 +47,5 @@ char	*ft_strrchr(const char *s, int c)
 // 	printf("%s", ft_strrchr(s, c));
 // 	return (0);
 // }
+
+// Función idéntica a strrchr con la diferencia de que continúa el contenido de la string a partir de la última coincidencia indicada por int

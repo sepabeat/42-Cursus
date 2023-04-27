@@ -43,3 +43,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 // 	printf("%d", ft_memcmp(str1, str2, size));
 // 	return (0);
 // }
+
+/*Esta función compara byte por byte s1 y s2, ambas de tamaño n, devuelve
+0 si son iguales, si no, devulve la diferencia entre los dos primeros bytes que 
+encuentra diferentes, casteados como (unsigned char)*/
