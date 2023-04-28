@@ -6,7 +6,7 @@
 /*   By: salperez <salperez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/24 12:51:31 by salperez          #+#    #+#             */
-/*   Updated: 2023/04/28 16:51:35 by salperez         ###   ########.fr       */
+/*   Updated: 2023/04/28 19:32:47 by salperez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,5 +46,10 @@ char	*ft_strtrim(char const *s1, char const *set);
 char	**ft_split(char const *s, char c);
 char	*ft_itoa(int n);
 char	*ft_strmapi(char const	*s, char (*f)(unsigned int, char));
+void	ft_striteri(char	*s, void (*f)(unsigned int, char*));
+void	ft_putchar_fd(char c, int fd);
+void	ft_putstr_fd(char *s, int fd);
+void	ft_putendl_fd(char	*s, int fd);
+void	ft_putnbr_fd(int n, int fd);
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: salperez <salperez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/28 15:19:11 by salperez          #+#    #+#             */
-/*   Updated: 2023/04/28 16:53:16 by salperez         ###   ########.fr       */
+/*   Updated: 2023/04/28 17:23:53 by salperez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ char	*ft_strmapi(char const	*s, char (*f)(unsigned int, char))
 	}
 	str[i] = '\0';
 	return (str);
+	free (str);
 }
 
 // int main (void)

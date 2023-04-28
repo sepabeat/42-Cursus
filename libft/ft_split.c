@@ -6,7 +6,7 @@
 /*   By: salperez <salperez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/28 11:33:00 by salperez          #+#    #+#             */
-/*   Updated: 2023/04/28 11:57:38 by salperez         ###   ########.fr       */
+/*   Updated: 2023/04/28 19:50:35 by salperez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,7 +71,7 @@ char	**ft_split(char *s, char c)
 
 	z = 0;
 	x = 0;
-	str = (char **)malloc(ft_count_word(s, c) * sizeof(char *) + 1);
+	str = (char **)malloc(sizeof(char *) * ((ft_count_word(s, c)) + 1));
 	if (!str || !s)
 		return (NULL);
 	while (s[x])
@@ -89,15 +89,14 @@ char	**ft_split(char *s, char c)
 	}
 	str[z] = NULL;
 	return (str);
-	free(str);
 }
 
 // int	main(void)
 // {
 // 	char s1[] = "    hola  d  k ase  ";
 // 	char del = ' ';
-// 	// printf("%d", ft_countw(s1, del));
-// 	printf("%s", ft_split(s1, del));
+// 	printf("%d\n", ft_count_word(s1, del));
+// 	ft_split(s1, del);
 // 	return (0);
 // }
 
