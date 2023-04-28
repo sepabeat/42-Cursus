@@ -6,7 +6,7 @@
 /*   By: salperez <salperez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/24 12:40:29 by salperez          #+#    #+#             */
-/*   Updated: 2023/04/25 16:56:26 by salperez         ###   ########.fr       */
+/*   Updated: 2023/04/28 11:30:31 by salperez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,3 +64,7 @@ char	*ft_strdup(const char *src)
 // 	printf("%s", ft_strdup(src));
 // 	return (0);
 // }
+
+/* Esta función aloja suficiente memoria para copiar s1, 
+hace la copia y devuelve
+un puntero al string, si no se pudo asignar la memoría devuelve NULL */

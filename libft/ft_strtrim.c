@@ -6,7 +6,7 @@
 /*   By: salperez <salperez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/26 11:30:37 by salperez          #+#    #+#             */
-/*   Updated: 2023/04/26 17:24:50 by salperez         ###   ########.fr       */
+/*   Updated: 2023/04/28 11:53:53 by salperez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,6 @@ int	ft_check_set(char c, char const *set)
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	char	*str;
-	size_t	i;
 	size_t	start;
 	size_t	end;
 
@@ -43,9 +42,9 @@ char	*ft_strtrim(char const *s1, char const *set)
 	return (str);
 }
 
-int main (void)
-{
-	char s1[] = "hola";
-	char set[] = "la";
-	printf("%s", ft_strtrim(s1, set));
-}
+// int main (void)
+// {
+// 	char s1[] = "hola";
+// 	char set[] = "la";
+// 	printf("%s", ft_strtrim(s1, set));
+// }

@@ -6,7 +6,7 @@
 /*   By: salperez <salperez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/18 14:29:57 by salperez          #+#    #+#             */
-/*   Updated: 2023/04/25 14:31:47 by salperez         ###   ########.fr       */
+/*   Updated: 2023/04/28 11:29:22 by salperez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,4 +36,5 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 // 	return (0);
 // }
 
-// Función que resta el valor de la primera diferencia encontrada hasta n y devuelve la resta en valor ASCII
+// Función que resta el valor de la primera diferencia
+// encontrada hasta n y devuelve la resta en valor ASCII

@@ -6,7 +6,7 @@
 /*   By: salperez <salperez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/24 12:40:49 by salperez          #+#    #+#             */
-/*   Updated: 2023/04/24 14:04:58 by salperez         ###   ########.fr       */
+/*   Updated: 2023/04/28 11:31:27 by salperez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ void	*ft_calloc(size_t count, size_t size)
 // 	return (0);
 // }
 
-/**Esta función aloja de forma contigua espacio para n objetos, cada uno de size 
+/*Esta función aloja de forma contigua espacio para n objetos, cada uno de size 
 bytes de memoria y devuelve un puntero a la memoria alojada, esta memoria se
 llena con bytes de valor 0
 Una forma más segura (pero más lenta) que malloc para reservar memoria para 

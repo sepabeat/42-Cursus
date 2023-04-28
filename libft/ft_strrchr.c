@@ -6,7 +6,7 @@
 /*   By: salperez <salperez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/18 12:08:55 by salperez          #+#    #+#             */
-/*   Updated: 2023/04/25 11:32:51 by salperez         ###   ########.fr       */
+/*   Updated: 2023/04/28 11:28:56 by salperez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,4 +48,5 @@ char	*ft_strrchr(const char *s, int c)
 // 	return (0);
 // }
 
-// Función idéntica a strrchr con la diferencia de que continúa el contenido de la string a partir de la última coincidencia indicada por int
+// Función idéntica a strrchr con la diferencia de que continúa
+// el contenido de la string a partir de la última coincidencia indicada por int

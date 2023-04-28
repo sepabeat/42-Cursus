@@ -6,7 +6,7 @@
 /*   By: salperez <salperez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/18 15:31:36 by salperez          #+#    #+#             */
-/*   Updated: 2023/04/24 13:36:10 by salperez         ###   ########.fr       */
+/*   Updated: 2023/04/28 11:31:05 by salperez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,4 +44,8 @@ void	*ft_memchr(const void *s, int c, size_t n)
 // 	return (0);
 // }
 
-// esta función es lo mismo que strchr, nos va a devolver la string a partir de la coincidencia que se le ha dado, pero devuelve void. Con mem estamos trabajando con memoria en lugar de con variables, esa es la principal diferencia con str
+// esta función es lo mismo que strchr, nos va a
+// devolver la string a partir de la coincidencia 
+//que se le ha dado, pero devuelve void. Con mem estamos
+// trabajando con memoria en lugar de con variables, 
+//esa es la principal diferencia con str

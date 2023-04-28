@@ -6,7 +6,7 @@
 /*   By: salperez <salperez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/24 12:40:58 by salperez          #+#    #+#             */
-/*   Updated: 2023/04/25 14:58:05 by salperez         ###   ########.fr       */
+/*   Updated: 2023/04/28 11:31:44 by salperez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,4 +47,6 @@ int	ft_atoi(const char *str)
 //     return (0);
 // }
 
-// te devuelve números enteros de un string eliminando espacios al principio y con su signo correspondiente. Y le das un string y te devuelve un int
+// te devuelve números enteros de un string eliminando 
+//espacios al principio y con su signo correspondiente. 
+//Y le das un string y te devuelve un int
