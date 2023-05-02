@@ -6,7 +6,7 @@
 #    By: salperez <salperez@student.42malaga.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/05/01 17:32:30 by salperez          #+#    #+#              #
-#    Updated: 2023/05/01 19:21:33 by salperez         ###   ########.fr        #
+#    Updated: 2023/05/02 13:50:23 by salperez         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,7 +23,7 @@ SOURCES = ft_isalpha.c ft_isalnum.c ft_isascii.c ft_isdigit.c ft_isprint.c ft_to
 
 OBJ = $(SOURCES:.c=.o)
 
-BONUS = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c 
+BONUS = ft_lstnew_bonus.c ft_lstadd_front_bonus.c ft_lstsize_bonus.c ft_lstlast_bonus.c ft_lstadd_back_bonus.c
 
 BONUS_OBJS = $(BONUS:.c=.o)
 
