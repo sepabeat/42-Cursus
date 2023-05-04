@@ -6,12 +6,12 @@
 /*   By: salperez <salperez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/26 11:30:37 by salperez          #+#    #+#             */
-/*   Updated: 2023/04/28 11:53:53 by salperez         ###   ########.fr       */
+/*   Updated: 2023/05/04 12:42:37 by salperez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
+// #include <stdio.h>
 
 int	ft_check_set(char c, char const *set)
 {

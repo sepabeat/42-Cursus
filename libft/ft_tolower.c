@@ -6,11 +6,11 @@
 /*   By: salperez <salperez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 14:46:21 by salperez          #+#    #+#             */
-/*   Updated: 2023/04/24 13:23:27 by salperez         ###   ########.fr       */
+/*   Updated: 2023/05/04 12:42:50 by salperez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+// #include <stdio.h>
 #include "libft.h"
 
 int	ft_tolower(int c)

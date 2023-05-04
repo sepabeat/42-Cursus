@@ -6,13 +6,13 @@
 /*   By: salperez <salperez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 15:45:39 by salperez          #+#    #+#             */
-/*   Updated: 2023/04/25 16:04:40 by salperez         ###   ########.fr       */
+/*   Updated: 2023/05/04 12:41:31 by salperez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <string.h>
+// #include <stdio.h>
+// #include <string.h>
 
 char	*ft_strchr(const char *s, int c)
 {

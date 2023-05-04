@@ -6,13 +6,13 @@
 /*   By: salperez <salperez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/19 13:19:11 by salperez          #+#    #+#             */
-/*   Updated: 2023/04/25 17:09:22 by salperez         ###   ########.fr       */
+/*   Updated: 2023/05/04 12:40:20 by salperez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <string.h>
+// #include <stdio.h>
+// #include <string.h>
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {

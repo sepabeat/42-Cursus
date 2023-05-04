@@ -6,12 +6,12 @@
 /*   By: salperez <salperez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/24 12:40:58 by salperez          #+#    #+#             */
-/*   Updated: 2023/04/28 11:31:44 by salperez         ###   ########.fr       */
+/*   Updated: 2023/05/04 12:38:35 by salperez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
+// #include <stdio.h>
+// #include <stdlib.h>
 #include "libft.h"
 
 int	ft_atoi(const char *str)

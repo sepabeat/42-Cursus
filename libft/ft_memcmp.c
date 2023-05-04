@@ -6,13 +6,13 @@
 /*   By: salperez <salperez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/18 16:56:17 by salperez          #+#    #+#             */
-/*   Updated: 2023/04/25 15:05:33 by salperez         ###   ########.fr       */
+/*   Updated: 2023/05/04 12:40:15 by salperez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <string.h>
+// #include <stdio.h>
+// #include <string.h>
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {

@@ -6,13 +6,13 @@
 /*   By: salperez <salperez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/18 16:58:13 by salperez          #+#    #+#             */
-/*   Updated: 2023/04/25 16:04:18 by salperez         ###   ########.fr       */
+/*   Updated: 2023/05/04 12:38:44 by salperez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <strings.h>
+// #include <stdio.h>
+// #include <strings.h>
 
 void	ft_bzero(void *s, size_t n)
 {

@@ -6,12 +6,13 @@
 /*   By: salperez <salperez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/28 11:33:00 by salperez          #+#    #+#             */
-/*   Updated: 2023/05/01 13:05:59 by salperez         ###   ########.fr       */
+/*   Updated: 2023/05/04 12:41:09 by salperez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+// #include <stdio.h>
 #include <stdlib.h>
+#include "libft.h"
 
 char	*ft_strncpy(char *dest, const char *src, unsigned int n)
 {

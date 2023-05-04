@@ -6,12 +6,12 @@
 /*   By: salperez <salperez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 15:12:20 by salperez          #+#    #+#             */
-/*   Updated: 2023/04/24 13:22:56 by salperez         ###   ########.fr       */
+/*   Updated: 2023/05/04 12:40:27 by salperez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
+// #include <stdio.h>
+// #include <string.h>
 #include "libft.h"
 
 void	*ft_memset(void *b, int c, size_t len)

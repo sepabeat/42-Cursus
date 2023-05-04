@@ -6,13 +6,13 @@
 /*   By: salperez <salperez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/28 11:31:10 by salperez          #+#    #+#             */
-/*   Updated: 2023/04/28 15:06:28 by salperez         ###   ########.fr       */
+/*   Updated: 2023/05/04 12:39:32 by salperez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <stdlib.h>
+// #include <stdio.h>
+// #include <stdlib.h>
 
 int	ft_num_len(int n)
 {

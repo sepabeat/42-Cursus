@@ -6,13 +6,13 @@
 /*   By: salperez <salperez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/18 15:31:36 by salperez          #+#    #+#             */
-/*   Updated: 2023/04/28 11:31:05 by salperez         ###   ########.fr       */
+/*   Updated: 2023/05/04 12:40:09 by salperez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <string.h>
+// #include <stdio.h>
+// #include <string.h>
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {

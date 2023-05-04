@@ -6,13 +6,13 @@
 /*   By: salperez <salperez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/24 12:40:49 by salperez          #+#    #+#             */
-/*   Updated: 2023/04/28 11:31:27 by salperez         ###   ########.fr       */
+/*   Updated: 2023/05/04 12:38:53 by salperez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <stdlib.h>
+// #include <stdio.h>
+// #include <stdlib.h>
 
 void	*ft_calloc(size_t count, size_t size)
 {
