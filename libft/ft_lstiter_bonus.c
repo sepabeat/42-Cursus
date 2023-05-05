@@ -6,7 +6,7 @@
 /*   By: salperez <salperez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/02 16:06:52 by salperez          #+#    #+#             */
-/*   Updated: 2023/05/02 16:39:32 by salperez         ###   ########.fr       */
+/*   Updated: 2023/05/05 14:01:48 by salperez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,14 @@
 
 void	ft_lstiter(t_list	*lst, void (*f)(void	*))
 {
-	while (lst)
+	if (lst && f)
 	{
+		while (lst->next != 0)
+		{
+			f(lst->content);
+			lst = lst->next;
+		}
 		f(lst->content);
-		lst = (lst)->next;
 	}
 }
 
