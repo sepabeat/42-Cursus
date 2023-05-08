@@ -1,30 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.c                                        :+:      :+:    :+:   */
+/*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: salperez <salperez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/08 12:58:21 by salperez          #+#    #+#             */
-/*   Updated: 2023/05/08 18:25:27 by salperez         ###   ########.fr       */
+/*   Created: 2023/05/08 16:24:15 by salperez          #+#    #+#             */
+/*   Updated: 2023/05/08 16:24:22 by salperez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdarg.h>
-#include <stdio.h>
+#ifndef FT_PRINTF_H
+# define FT_PRINTF_H
 
-int	ft_printf(char const *str, ...)
-{
-	int		i;
-	va_list	argptr;
+# include <stdarg.h>
+# include <stdio.h>
+# include <stdlib.h>
+# include <string.h>
+# include <unistd.h>
 
-	va_start(argptr, i);
-}
+int	ft_printf(char const *str, ...);
 
-
-int	main(void)
-{
-	printf("check, check %d, hola\n", 25);
-/* 	ft_printf("check, check %d, hola\n", 25);
- */
-}
+#endif
