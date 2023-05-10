@@ -6,13 +6,13 @@
 /*   By: salperez <salperez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/08 19:16:29 by salperez          #+#    #+#             */
-/*   Updated: 2023/05/08 19:18:37 by salperez         ###   ########.fr       */
+/*   Updated: 2023/05/10 16:56:47 by salperez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_putchar(char c)
+int	ft_putchari(char c)
 {
 	return (write(1, &c, 1));
 }

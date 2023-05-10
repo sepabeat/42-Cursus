@@ -6,7 +6,7 @@
 /*   By: salperez <salperez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/08 12:58:21 by salperez          #+#    #+#             */
-/*   Updated: 2023/05/08 19:19:18 by salperez         ###   ########.fr       */
+/*   Updated: 2023/05/10 16:56:25 by salperez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,40 +14,50 @@
 #include <stdio.h>
 #include "ft_printf.h"
 
+void	ft_printformat(va_list args, char *str, size_t *i)
+{
+	if (*str == 'c')
+		ft_putchari(va_arg(args, int), i);
+	else if (*str == 's')
+		ft_putstri(va_arg(args, char *), i);
+	else if ((*str == 'd') || (*str == 'i'))
+		ft_putnbri(va_arg(args, int), i);
+	else if (*str == 'x')
+		ft_puthexalli(va_arg(args, unsigned int), "0123456789abcdef", i);
+	else if (*str == 'X')
+		ft_puthexalli(va_arg(args, unsigned int), "0123456789ABCDEF", i);
+	else if (*str == 'u')
+		ft_putunsigi(va_arg(args, unsigned int), i);
+	else if (*str == '%')
+		ft_putchari(*str, i);
+	else if (*str == 'p')
+	{
+		ft_putstri("0x", i);
+		ft_putthexalli(va_arg(args, unsigned long int), "0123456789abcdef", i);
+	}
+}
+
 int	ft_printf(char const *str, ...)
 {
 	size_t	i;
-	va_list	argptr;
+	va_list	args;
 
-	va_start(argptr, str);
+	va_start(args, str);
 	i = 0;
+	if (!str)
+		return (NULL);
 	while (str[i])
 	{
 		if (str[i] == '%')
 		{
 			i++;
-			if ((str[i] == 'd') || (str[i] == 'i'))
-				ft_putnbri(va_arg(argptr, int), i);
-			else if (str[i] == 's')
-				printf("%s", va_arg(argptr, char *));
-			else if (str[i] == 'c')
-				printf("%c", va_arg(argptr, int));
-			else if (str[i] == 'x')
-				printf("%x", va_arg(argptr, unsigned int));
-			else if (str[i] == 'X')
-				printf("%X", va_arg(argptr, unsigned int));
-			else if (str[i] == 'p')
-				printf("%p", va_arg(argptr, void *));
-			else if (str[i] == 'u')
-				printf("%u", va_arg(argptr, unsigned int));
-			else if (str[i] == '%')
-				printf("%%");
+			ft_printformat(args, (char *)str, &i);
 		}
 		else
 			printf("%c", str[i]);
 		i++;
 	}
-	va_end(argptr);
+	va_end(args);
 	return (i);
 }
 
