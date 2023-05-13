@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf_functions.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: salperez <salperez@student.42malaga.com    +#+  +:+       +#+        */
+/*   By: salvadorperezavila <salvadorperezavila@    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/08 19:16:29 by salperez          #+#    #+#             */
-/*   Updated: 2023/05/10 16:56:47 by salperez         ###   ########.fr       */
+/*   Updated: 2023/05/13 23:53:34 by salvadorper      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,6 +60,11 @@ void ft_putnbri(int n, size_t *i)
 	}
 	else 
 		ft_putchari(n + '0', i);
+}
+
+void ft_puthexalli(unsigned int	n, size_t *i)
+{
+	
 }
 
 int	main(void)
