@@ -72,7 +72,7 @@ void	ft_puthexalli(unsigned long int n, char *hexa, size_t *i)
 
 void	ft_putunsigi(unsigned int n, size_t *i)
 {
-	if (n < 0)
+	if ((int)n < 0)
 		n *= -1;
 	if (n >= 10)
 	{
