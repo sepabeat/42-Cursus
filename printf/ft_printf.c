@@ -10,11 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdarg.h>
-#include <stdio.h>
+//#include <stdarg.h>
+//#include <stdio.h>
 #include "ft_printf.h"
 
-void	ft_printformat(va_list args, char *str, size_t *i)
+void	ft_printfunctions(va_list args, char *str, size_t *i)
 {
 	if (*str == 'c')
 		ft_putchari(va_arg(args, int), i);
@@ -33,7 +33,7 @@ void	ft_printformat(va_list args, char *str, size_t *i)
 	else if (*str == 'p')
 	{
 		ft_putstri("0x", i);
-		ft_putthexalli(va_arg(args, unsigned long int), "0123456789abcdef", i);
+		ft_puthexalli(va_arg(args, unsigned long int), "0123456789abcdef", i);
 	}
 }
 
@@ -45,13 +45,13 @@ int	ft_printf(char const *str, ...)
 	va_start(args, str);
 	i = 0;
 	if (!str)
-		return (NULL);
+		str = "(null)";
 	while (str[i])
 	{
 		if (str[i] == '%')
 		{
 			i++;
-			ft_printformat(args, (char *)str, &i);
+			ft_printfunctions(args, (char *)str, &i);
 		}
 		else
 			printf("%c", str[i]);
@@ -61,9 +61,9 @@ int	ft_printf(char const *str, ...)
 	return (i);
 }
 
-int	main(void)
-{
-	printf("check, check %d, hola\n", 25);
-	/* 	ft_printf("check, check %d, hola\n", 25);
- */
-}
+// int	main(void)
+// {
+// 	printf("check, check %d, hola\n", 25);
+// 	/* 	ft_printf("check, check %d, hola\n", 25);
+//  */
+// }

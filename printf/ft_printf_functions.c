@@ -10,24 +10,14 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <unistd.h>
+//#include <stdio.h>
+//#include <unistd.h>
 #include "ft_printf.h"
 
 void	ft_putchari(int c, size_t *i)
 {
 	write(1, &c, 1);
 	(*i)++;
-}
-
-size_t	ft_strlen(char const *str)
-{
-	size_t	i;
-
-	i = 0;
-	while (str[i])
-		i++;
-	return (i);
 }
 
 void ft_putstri(char *str, size_t *i)
@@ -62,24 +52,51 @@ void ft_putnbri(int n, size_t *i)
 		ft_putchari(n + '0', i);
 }
 
-void ft_puthexalli(unsigned int	n, size_t *i)
+void ft_puthexalli(unsigned long int	n, char *hexa, size_t *i)
 {
-	
+	char	c;
+
+	if (n < 16)
+	{
+		c = hexa [n];
+		ft_putchari(c, i);
+	}
+	if (n >= 16)
+	{
+		c = hexa [n % 16];
+		n = n / 16;
+		ft_puthexalli(n, hexa, i);
+		ft_putchari(c, i);
+	}
 }
 
-int	main(void)
+void ft_putunsigi(unsigned int n, size_t *i)
 {
-    size_t i = 0;
-    char letra = 'z';
-	int j = 2456;
-	int x = 't';
-    char *str = "hola k ase";
-    char *str2 = NULL;
+	if (n < 0)
+		n *= -1;
+	if (n >= 10)
+	{
+		ft_putunsigi(n / 10, i);
+		ft_putchari(n % 10 + '0', i);
+	}
+	else
+		ft_putchari(n + '0', i);
+}
+
+//int	main(void)
+//{
+   // size_t i = 0;
+   // char letra = 'z';
+	//int j = 2456;
+	//int x = 't';
+    //char *str = "hola k ase";
+   // char *str2 = NULL;
 
     //ft_putchari(x, &i);
     //ft_putstri(str2, &i);
-	ft_putnbri(j, &i);
+	//ft_putnbri(j, &i);
+	//ft_puthexalli(j, "0123456789abcdef", &i);
 	//printf("check, check %d, hola\n", 25);
 	/* 	ft_printf("check, check %d, hola\n", 25);
  */
-}
+//}

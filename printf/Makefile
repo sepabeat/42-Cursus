@@ -18,7 +18,7 @@ CFLAGS = -Wall -Werror -Wextra
 
 LIB = ar rcs
 
-SOURCES = ft_printf.c 
+SOURCES = ft_printf.c ft_print_functions.c
 
 OBJ = $(SOURCES:.c=.o)
 
