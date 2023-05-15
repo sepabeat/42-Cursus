@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: salperez <salperez@student.42malaga.com    +#+  +:+       +#+        */
+/*   By: salvadorperezavila <salvadorperezavila@    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/08 12:58:21 by salperez          #+#    #+#             */
-/*   Updated: 2023/05/10 16:56:25 by salperez         ###   ########.fr       */
+/*   Updated: 2023/05/15 16:10:22 by salvadorper      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
