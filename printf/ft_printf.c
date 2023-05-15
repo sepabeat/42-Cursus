@@ -46,16 +46,16 @@ int	ft_printf(char const *str, ...)
 	i = 0;
 	if (!str)
 		str = "(null)";
-	while (str[i])
+	while (*str)
 	{
-		if (str[i] == '%')
+		if (*str == '%')
 		{
 			i++;
 			ft_printfunctions(args, (char *)str, &i);
 		}
 		else
-			printf("%c", str[i]);
-		i++;
+			ft_putchari(*str, &i);
+		str++;
 	}
 	va_end(args);
 	return (i);
