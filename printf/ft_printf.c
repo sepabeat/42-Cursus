@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: salvadorperezavila <salvadorperezavila@    +#+  +:+       +#+        */
+/*   By: salperez <salperez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/08 12:58:21 by salperez          #+#    #+#             */
-/*   Updated: 2023/05/15 16:10:22 by salvadorper      ###   ########.fr       */
+/*   Updated: 2023/05/16 13:45:41 by salperez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,7 @@ int	ft_printf(char const *str, ...)
 	{
 		if (*str == '%')
 		{
-			i++;
+			str++;
 			ft_printfunctions(args, (char *)str, &i);
 		}
 		else

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf_functions.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: salvadorperezavila <salvadorperezavila@    +#+  +:+       +#+        */
+/*   By: salperez <salperez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/08 19:16:29 by salperez          #+#    #+#             */
-/*   Updated: 2023/05/15 16:10:05 by salvadorper      ###   ########.fr       */
+/*   Updated: 2023/05/16 13:50:50 by salperez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,7 +72,7 @@ void	ft_puthexalli(unsigned long int n, char *hexa, size_t *i)
 
 void	ft_putunsigi(unsigned int n, size_t *i)
 {
-	if ((int)n < 0)
+	if (n < 0)
 		n *= -1;
 	if (n >= 10)
 	{
