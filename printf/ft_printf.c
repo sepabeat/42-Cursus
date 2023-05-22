@@ -6,7 +6,7 @@
 /*   By: salperez <salperez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/08 12:58:21 by salperez          #+#    #+#             */
-/*   Updated: 2023/05/16 13:45:41 by salperez         ###   ########.fr       */
+/*   Updated: 2023/05/22 13:27:20 by salperez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,23 +17,23 @@
 void	ft_printfunctions(va_list args, char *str, size_t *i)
 {
 	if (*str == 'c')
-		ft_putchari(va_arg(args, int), i);
+		ft_putcharint(va_arg(args, int), i);
 	else if (*str == 's')
-		ft_putstri(va_arg(args, char *), i);
+		ft_putstrint(va_arg(args, char *), i);
 	else if ((*str == 'd') || (*str == 'i'))
-		ft_putnbri(va_arg(args, int), i);
+		ft_putnbrint(va_arg(args, int), i);
 	else if (*str == 'x')
-		ft_puthexalli(va_arg(args, unsigned int), "0123456789abcdef", i);
+		ft_puthexallint(va_arg(args, unsigned int), "0123456789abcdef", i);
 	else if (*str == 'X')
-		ft_puthexalli(va_arg(args, unsigned int), "0123456789ABCDEF", i);
+		ft_puthexallint(va_arg(args, unsigned int), "0123456789ABCDEF", i);
 	else if (*str == 'u')
-		ft_putunsigi(va_arg(args, unsigned int), i);
+		ft_putunsigint(va_arg(args, unsigned int), i);
 	else if (*str == '%')
-		ft_putchari(*str, i);
+		ft_putcharint(*str, i);
 	else if (*str == 'p')
 	{
-		ft_putstri("0x", i);
-		ft_puthexalli(va_arg(args, unsigned long int), "0123456789abcdef", i);
+		ft_putstrint("0x", i);
+		ft_puthexallint(va_arg(args, unsigned long int), "0123456789abcdef", i);
 	}
 }
 
@@ -54,7 +54,7 @@ int	ft_printf(char const *str, ...)
 			ft_printfunctions(args, (char *)str, &i);
 		}
 		else
-			ft_putchari(*str, &i);
+			ft_putcharint(*str, &i);
 		str++;
 	}
 	va_end(args);

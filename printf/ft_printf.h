@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: salvadorperezavila <salvadorperezavila@    +#+  +:+       +#+        */
+/*   By: salperez <salperez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/08 16:24:15 by salperez          #+#    #+#             */
-/*   Updated: 2023/05/15 16:10:37 by salvadorper      ###   ########.fr       */
+/*   Updated: 2023/05/22 13:28:42 by salperez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,10 +21,10 @@
 
 int		ft_printf(char const *str, ...);
 void	ft_printfunctions(va_list args, char *str, size_t *i);
-void	ft_putchari(int c, size_t *i);
-void	ft_putstri(char *str, size_t *i);
-void	ft_putnbri(int n, size_t *i);
-void	ft_puthexalli(unsigned long int n, char *hexa, size_t *i);
-void	ft_putunsigi(unsigned int n, size_t *i);
+void	ft_putcharint(int c, size_t *i);
+void	ft_putstrint(char *str, size_t *i);
+void	ft_putnbrint(int n, size_t *i);
+void	ft_puthexallint(unsigned long int n, char *hexa, size_t *i);
+void	ft_putunsigint(unsigned int n, size_t *i);
 
 #endif
