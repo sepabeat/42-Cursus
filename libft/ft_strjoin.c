@@ -6,22 +6,22 @@
 /*   By: salperez <salperez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/25 17:55:33 by salperez          #+#    #+#             */
-/*   Updated: 2023/05/04 12:41:44 by salperez         ###   ########.fr       */
+/*   Updated: 2023/05/24 13:49:17 by salperez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-// #include <stdio.h>
+#include <stdio.h>
 
-// size_t	ft_strlen(const char *s)
-// {
-// 	size_t	i;
+size_t	ft_strlen(const char *s)
+{
+	size_t	i;
 
-// 	i = 0;
-// 	while (s[i] != '\0')
-// 		i++;
-// 	return (i);
-// }
+	i = 0;
+	while (s[i] != '\0')
+		i++;
+	return (i);
+}
 
 char	*ft_strjoin(char const	*s1, char const	*s2)
 {
@@ -49,9 +49,11 @@ char	*ft_strjoin(char const	*s1, char const	*s2)
 	free(str);
 }
 
-// int main (void)
-// {
-// 	char s1[] = "hola";
-// 	char s2[] = "mundo";
-// 	printf("%s", ft_strjoin(s1, s2));
-// }
+int main (void)
+{
+	char s1[] = "hola";
+	char s2[] = "mundo";
+	printf("%s", ft_strjoin(s1, s2));
+}
+
+/*This functions is used to make a bridge between two strings*/
