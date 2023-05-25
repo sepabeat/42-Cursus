@@ -6,7 +6,7 @@
 /*   By: salperez <salperez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/24 12:15:08 by salperez          #+#    #+#             */
-/*   Updated: 2023/05/25 15:13:33 by salperez         ###   ########.fr       */
+/*   Updated: 2023/05/25 15:25:22 by salperez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -110,17 +110,11 @@ char	*get_next_line(int fd)
 	return (line);
 }
 
-/* void	ft_leaks(void)
-{
-	system("leaks -q gnl");
-} */
-
 // int	main(void)
 // {
 // 	int		fd;
 // 	char	*line;
 
-// 	// atexit(ft_leaks);
 // 	fd = open("testme.txt", O_RDONLY);
 // 	line = get_next_line(fd);
 // 	printf("Línea:%s\n", line);
