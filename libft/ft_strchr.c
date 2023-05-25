@@ -6,7 +6,7 @@
 /*   By: salperez <salperez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 15:45:39 by salperez          #+#    #+#             */
-/*   Updated: 2023/05/04 12:41:31 by salperez         ###   ########.fr       */
+/*   Updated: 2023/05/25 12:58:06 by salperez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,8 @@ char	*ft_strchr(const char *s, int c)
 
 // int	main(void)
 // {
-// 	const char s[] = "hola '\0' ase";
-// 	int c = '\0';
+// 	const char s[] = "hola k ase";
+// 	int c = 'k';
 
 // 	// printf("%s", strchr(s, c));
 // 	printf("%s", ft_strchr(s, c));
