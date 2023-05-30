@@ -6,7 +6,7 @@
 /*   By: salperez <salperez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/24 12:15:08 by salperez          #+#    #+#             */
-/*   Updated: 2023/05/30 14:37:57 by salperez         ###   ########.fr       */
+/*   Updated: 2023/05/30 16:07:43 by salperez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,7 +67,7 @@ char	*update_stored(char *stored)
 	return (aux);
 }
 
-char	*join_and_free(char *stored, char *temp)
+char	*mix_free(char *stored, char *temp)
 {
 	char	*aux;
 
@@ -99,7 +99,7 @@ char	*get_next_line(int fd)
 		if (bytesdone < 0)
 			return (free(stored[fd]), stored[fd] = NULL, NULL);
 		temp[bytesdone] = '\0';
-		stored[fd] = join_and_free(stored[fd], temp);
+		stored[fd] = mix_free(stored[fd], temp);
 		if (!stored[fd])
 			return (NULL);
 		if (ft_strchr(stored[fd], '\n'))

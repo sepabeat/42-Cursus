@@ -6,58 +6,60 @@
 /*   By: salperez <salperez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/29 12:30:02 by salperez          #+#    #+#             */
-/*   Updated: 2023/05/29 12:49:56 by salperez         ###   ########.fr       */
+/*   Updated: 2023/05/30 14:39:20 by salperez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #include "get_next_line.h"
 #include <fcntl.h>
 #include <stdio.h>
 
-	//actualizar stuck una vez utilizado
-// char	*ft_create_line(char *stuck)
-// {
-
-// }
-
-char *get_next_line(int fd)
+char	*new_line(char *saved)
 {
-	char		*tmp[BUFFER_SIZE + 1];
-	ssize_t		numbytes;
-	char		*line;
-	static char	*stuck;
+	int		i;
+	char	*line;
 
-	if (BUFFER_SIZE <= 0 || fd < 0)
-		return (NULL);
-	numbytes = 1;
-	while (!(*ft_strchr(stuck, '\n')) && numbytes > 0)
+	i = 0;
+	while (saved[i] != '\n' && saved[i] != '\0') //strlen
+		i++;
+	if (saved[i] == '\n')
+		i++;
+	line = malloc(sizeof(char) * i + 1);
+	//Control de errores
+	i = 0;
+	while (saved[i] != '\n' && saved[i] != '\0')
 	{
-		numbytes = read(fd, tmp, BUFFER_SIZE);
-		if (numbytes == -1)
-			return (NULL);
-		tmp[numbytes] = '\0';
-		stuck = ft_strjoin(stuck, tmp);
+		line[i] = saved[i];
+		i++;
 	}
-	line = ft_create_line(stuck);
+	if (saved[i] == '\n')
+		line[i++] = '\n';
+	line[i] = '\0';
 	return (line);
 }
 
-int	main(int argc, char **argv)
+char	*get_next_line(int fd)
 {
-	int		fd;
-	char	*line;
+	static char	*saved;
+	char		*line;
+	ssize_t		countbytes;
 
-	if (argc <= 1)
-		return (0);
-	else
-	{
-		fd = open(argv[1], O_RDONLY);
-		if (fd == -1)
-			return (0);
-		line = get_next_line(fd);
-		printf("%s", line);
-	}
-	close(fd);
-	return (0);
+	//char *temp;
+	if (fd < 0 || BUFFER_SIZE <= 0)
+		return (NULL);
+	countbytes = read(fd, saved, BUFFER_SIZE); //si falla probar con temp
+	line = new_line(saved);
+	//saved = del_line(saved);
+	//printf("%s", saved);
+	printf("%s\n", "error");
+	return (line);
+}
+
+int	main(void)
+{
+	int	fd;
+
+	fd = open("text.txt", O_RDONLY);
+	char *line = get_next_line(fd);
+	printf("%s", line);
 }
