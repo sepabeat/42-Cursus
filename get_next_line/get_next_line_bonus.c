@@ -6,7 +6,7 @@
 /*   By: salperez <salperez@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/24 12:15:08 by salperez          #+#    #+#             */
-/*   Updated: 2023/05/30 13:28:09 by salperez         ###   ########.fr       */
+/*   Updated: 2023/05/30 14:37:57 by salperez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -112,26 +112,25 @@ char	*get_next_line(int fd)
 
 // int	main(void)
 // {
-// 	int		fd1;
-// 	int		fd2;
+// 	int		fd[2];
 // 	int		i;
 // 	char	*line;
 
-// 	fd1 = open("testme.txt", O_RDONLY);
-// 	fd2 = open("testme2.txt", O_RDONLY);
+// 	fd[0] = open("testme.txt", O_RDONLY);
+// 	fd[1] = open("testme2.txt", O_RDONLY);
 // 	i = 1;
 // 	while (i < 4)
 // 	{
-// 		line = get_next_line(fd1);
+// 		line = get_next_line(fd[0]);
 // 		printf("%s", line);
 // 		free(line);
-// 		line = get_next_line(fd2);
+// 		line = get_next_line(fd[1]);
 // 		printf("%s", line);
 // 		free(line);
 // 		i++;
 // 	}
-// 	close(fd1);
-// 	close(fd2);
+// 	close(fd[0]);
+// 	close(fd[1]);
 // 	return (0);
 // }
 
